@@ -17,8 +17,9 @@
 }
 
 body {
+  background-image: radial-gradient(#363636,#000000);
   width: 100vw;
-  height: 230vh;
+  height: 100vh;
 }
 
 @layer utilities {

@@ -1,47 +1,69 @@
 export interface Person{
+    id: number;
     Name: string;
-    description:string;
+    Previewdescription:string;
+    Fulldescription: string;
 }
 
 export const Personsop: Person[] = [
-    {
+    {   
+        id: 1,
         Name:"Luffy",
-        description:"lorem impsum"
+        Previewdescription:"Monkey D. Luffy o capitão do bando dos chapeus de palha",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 2,
         Name:"Zoro",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 3,
         Name:"Sanji",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 4,
         Name:"Nami",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 5,
         Name:"Usoop",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 6,
         Name:"Chooper",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 7,
         Name:"Brook",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 8,
         Name:"Robin",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 9,
         Name:"Franky",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
     {
+        id: 10,
         Name:"Jinbei",
-        description:"lorem impsum"
+        Previewdescription:"lorem impsum",
+        Fulldescription: "lorem impsum"
     },
 ]
