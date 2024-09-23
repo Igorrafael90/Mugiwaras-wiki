@@ -1,80 +1,146 @@
-export interface Person{
+export interface Person {
     id: number;
     Name: string;
-    Previewdescription:string;
+    Previewdescription: string;
     Fulldescription: string;
+    Alcunha: string;
+    Altura: number;
+    Peso: number;
+    Haki: string;
+    Devilfruit: string;
     variant: string;
+    variantS: string;
 }
 
 export const Personsop: Person[] = [
-    {   
+    {
         id: 1,
-        Name:"Luffy",
-        Previewdescription:"Monkey D. Luffy o capitão do bando dos chapeus de palha, usuario da gomu gomu no mi virando um garoto de borracha",
+        Name: "Luffy",
+        Previewdescription: "Monkey D. Luffy o capitão do bando dos chapeus de palha, usuario da gomu gomu no mi virando um garoto de borracha",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-red-500"
+        variant: "hover:border-red-500",
+        variantS: "shadow-orange-300",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 2,
-        Name:"Zoro",
-        Previewdescription:"Roronoa Zoro o espadachim do bando dos chapeus de palha, usuario do estilo três espadas Santoryu",
+        Name: "Zoro",
+        Previewdescription: "Roronoa Zoro o espadachim do bando dos chapeus de palha, usuario do estilo três espadas Santoryu",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-green-500"
+        variant: "hover:border-green-500",
+        variantS: "shadow-green-300",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 3,
-        Name:"Sanji",
-        Previewdescription:"Vismoke Sanji o cozinheiro e combatente do bando dos chapeus de palha",
+        Name: "Sanji",
+        Previewdescription: "Vismoke Sanji o cozinheiro e combatente do bando dos chapeus de palha",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-yellow-500"
+        variant: "hover:border-yellow-500",
+        variantS: "shadow-yellow-300",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 4,
-        Name:"Nami",
-        Previewdescription:"Nami a navegadora do bando dos chapeus de palha, com seu clima tact ela pode criar eventos climaticos",
+        Name: "Nami",
+        Previewdescription: "Nami a navegadora do bando dos chapeus de palha, com seu clima tact ela pode criar eventos climaticos",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-orange-500"
+        variant: "hover:border-orange-500",
+        variantS: "shadow-orange-500",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 5,
-        Name:"Usoop",
-        Previewdescription:"Usoop o atirador do bando dos chapeus de palha, usando um estilingue no lugar de uma arma de fogo",
+        Name: "Usopp",
+        Previewdescription: "Usoop o atirador do bando dos chapeus de palha, usando um estilingue no lugar de uma arma de fogo",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-yellow-800"
+        variant: "hover:border-yellow-800",
+        variantS: "shadow-yellow-900",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 6,
-        Name:"Chopper",
-        Previewdescription:"Tony Tony Chooper o medico do bando dos chapeus de palha, uma rena que comeu a hito hito no mi a fruta do humano",
+        Name: "Chopper",
+        Previewdescription: "Tony Tony Chooper o medico do bando dos chapeus de palha, uma rena que comeu a hito hito no mi a fruta do humano",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-pink-500"
+        variant: "hover:border-pink-500",
+        variantS: "shadow-pink-500",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 7,
-        Name:"Brook",
-        Previewdescription:"Brook o musico do bando dos chapeus de palha, usuario da yomi yomi no mi a fruta da ressureição",
+        Name: "Brook",
+        Previewdescription: "Brook o musico do bando dos chapeus de palha, usuario da yomi yomi no mi a fruta da ressureição",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-gray-500"
+        variant: "hover:border-gray-500",
+        variantS: "shadow-gray-500",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 8,
-        Name:"Robin",
-        Previewdescription:"Nico Robin a arqueologa do bando dos chapeus de palha, usuaria da hana hana no mi a fruta que deixa duplicar partes do corpo",
+        Name: "Robin",
+        Previewdescription: "Nico Robin a arqueologa do bando dos chapeus de palha, usuaria da hana hana no mi a fruta que deixa duplicar partes do corpo",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-purple-500"
+        variant: "hover:border-purple-500",
+        variantS: "shadow-purple-500",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 9,
-        Name:"Franky",
-        Previewdescription:"Franky o arquiteto do bando dos chapeus de palha, Franky é um humano com partes de robô ele é essencialmente um ciborgue",
+        Name: "Franky",
+        Previewdescription: "Franky o arquiteto do bando dos chapeus de palha, Franky é um humano com partes de robô ele é essencialmente um ciborgue",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-blue-500"
+        variant: "hover:border-blue-500",
+        variantS: "shadow-blue-500",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
     {
         id: 10,
-        Name:"Jinbei",
-        Previewdescription:"Jinbei o timoneiro do bando dos chapeus de palha, um homem tritão capaz de usar o gyojin karate o karate dos tritões",
+        Name: "Jinbe",
+        Previewdescription: "Jinbei o timoneiro do bando dos chapeus de palha, um homem tritão capaz de usar o gyojin karate o karate dos tritões",
         Fulldescription: "lorem impsum",
-        variant: "hover:border-blue-300"
+        variant: " hover:border-blue-300 ",
+        variantS: "shadow-blue-300",
+        Alcunha: "",
+        Altura: 1,
+        Peso: 1,
+        Haki: "",
+        Devilfruit: ""
     },
 ]

@@ -17,10 +17,14 @@
 }
 
 body {
-  background-image: radial-gradient(#363636,#000000);
+  background-image: radial-gradient(closest-side ,#363636,#000000);
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
+
+
 
 @layer utilities {
   .text-balance {
