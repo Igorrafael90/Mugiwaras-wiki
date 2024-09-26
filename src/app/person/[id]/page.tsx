@@ -34,7 +34,7 @@ export default async function PersonPage({ params }: Pageprops) {
             <section className={`grid gap-20 grid-cols-2 w-auto h-auto border-4 border-black bg-gray-200 shadow-md ${trip.variantS}`}>
                 <div>
                     <h1 className="w-52 border-b-2 border-black font-bold uppercase">Bio</h1>
-                    <p className="w-72 min-w-44 break-words">{trip.Fulldescription}</p>
+                    <p className="w-72 min-w-44 break-words">{trip.Fulldescription}a</p>
                 </div>
                 <Image src={`/ilustrativeimages/${trip.Name}.png`} width={300} height={0} alt="" />
             </section>
