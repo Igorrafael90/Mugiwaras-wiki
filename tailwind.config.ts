@@ -17,16 +17,16 @@ const config: Config = {
     'hover:border-purple-500',
     'hover:border-blue-500',
     'hover:border-blue-300',
-    "shadow-orange-300",
-    "shadow-green-300",
-    "shadow-yellow-300",
-    "shadow-orange-500",
-    "shadow-yellow-900",
-    "shadow-pink-500",
-    "shadow-gray-500",
-    "shadow-purple-500",
-    "shadow-blue-500",
-    "shadow-blue-300"
+    'shadow-orange-300',
+    'shadow-green-300',
+    'shadow-yellow-300',
+    'shadow-orange-500',
+    'shadow-yellow-900',
+    'shadow-pink-500',
+    'shadow-gray-500',
+    'shadow-purple-500',
+    'shadow-blue-500',
+    'shadow-blue-300'
     // Inclua todas as outras variações que você usará.
   ],
   theme: {

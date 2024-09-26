@@ -20,11 +20,11 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-red-500",
         variantS: "shadow-orange-300",
-        Alcunha: "",
-        Altura: 1,
-        Peso: 1,
-        Haki: "",
-        Devilfruit: ""
+        Alcunha: "Luffy do Chapéu de Palha",
+        Altura: 1.74,
+        Peso: 75,
+        Haki: "Haki do Armamento Haki da Visão Haki do rei",
+        Devilfruit: "Hito Hito no Mi Nika"
     },
     {
         id: 2,
@@ -33,11 +33,11 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-green-500",
         variantS: "shadow-green-300",
-        Alcunha: "",
-        Altura: 1,
-        Peso: 1,
-        Haki: "",
-        Devilfruit: ""
+        Alcunha: "O Caçador de Piratas",
+        Altura: 1.81,
+        Peso: 90.01,
+        Haki: "Haki do Armamento Haki da Visão Haki do rei",
+        Devilfruit: "Nenhuma"
     },
     {
         id: 3,
@@ -46,11 +46,11 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-yellow-500",
         variantS: "shadow-yellow-300",
-        Alcunha: "",
+        Alcunha: "Perna Negra",
         Altura: 1,
         Peso: 1,
         Haki: "",
-        Devilfruit: ""
+        Devilfruit: "Nenhuma"
     },
     {
         id: 4,
@@ -59,24 +59,24 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-orange-500",
         variantS: "shadow-orange-500",
-        Alcunha: "",
+        Alcunha: "Gata Ladra",
         Altura: 1,
         Peso: 1,
         Haki: "",
-        Devilfruit: ""
+        Devilfruit: "Nenhuma"
     },
     {
         id: 5,
         Name: "Usopp",
-        Previewdescription: "Usoop o atirador do bando dos chapeus de palha, usando um estilingue no lugar de uma arma de fogo",
+        Previewdescription: "Usopp o atirador do bando dos chapeus de palha, usando um estilingue no lugar de uma arma de fogo",
         Fulldescription: "lorem impsum",
         variant: "hover:border-yellow-800",
         variantS: "shadow-yellow-900",
-        Alcunha: "",
+        Alcunha: "God Usopp",
         Altura: 1,
         Peso: 1,
         Haki: "",
-        Devilfruit: ""
+        Devilfruit: "Nenhuma"
     },
     {
         id: 6,
@@ -85,7 +85,7 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-pink-500",
         variantS: "shadow-pink-500",
-        Alcunha: "",
+        Alcunha: "O Amante de Algodão-Doce",
         Altura: 1,
         Peso: 1,
         Haki: "",
@@ -98,7 +98,7 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-gray-500",
         variantS: "shadow-gray-500",
-        Alcunha: "",
+        Alcunha: "O Demônio de Ohara",
         Altura: 1,
         Peso: 1,
         Haki: "",
@@ -111,7 +111,7 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-purple-500",
         variantS: "shadow-purple-500",
-        Alcunha: "",
+        Alcunha: "O Ciborgue",
         Altura: 1,
         Peso: 1,
         Haki: "",
@@ -124,11 +124,11 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: "hover:border-blue-500",
         variantS: "shadow-blue-500",
-        Alcunha: "",
+        Alcunha: "Soul King",
         Altura: 1,
         Peso: 1,
         Haki: "",
-        Devilfruit: ""
+        Devilfruit: "Nenhuma"
     },
     {
         id: 10,
@@ -137,10 +137,10 @@ export const Personsop: Person[] = [
         Fulldescription: "lorem impsum",
         variant: " hover:border-blue-300 ",
         variantS: "shadow-blue-300",
-        Alcunha: "",
+        Alcunha: "Cavaleiro do mar",
         Altura: 1,
         Peso: 1,
         Haki: "",
-        Devilfruit: ""
+        Devilfruit: "Nenhuma"
     },
 ]

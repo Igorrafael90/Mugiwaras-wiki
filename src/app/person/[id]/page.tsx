@@ -16,32 +16,28 @@ export default async function PersonPage({ params }: Pageprops) {
         return notFound()
     }
     return (
-        <section className="flex justify-center items-center w-full h-full">
-            <div className={`flex border-4 border-orange-100 flex-col w-1/4 h-auto min-w-80 bg-amber-100 ${trip.variantS} shadow-lg overflow-hidden`}>
-                <div className="flex w-full h-44">
-                    <Image className="border-4 border-black" src={`/wantedposters/${trip.Name.toLowerCase()}.jpg`} width={125} height={50} alt="" />
-                    <h1 className="text-3xl text-white bg-black h-10 w-32 rounded-e-3xl font-bold items-end text-left ">{trip.Name}</h1>
+        <main className="grid grid-flow-col gap-6 justify-center items-center w-full h-full">
+            <section className={`flex flex-col border-4 border-black items-center w-52 h-auto bg-gray-200 shadow-md ${trip.variantS}`}>
+                <Image src={`/wantedposters/${trip.Name}.jpg`} className="h-52 my-2 border-white border-4" width={150} height={50} alt=""/>
+                <h1 className="text-center bg-white -my-2 w-28 font-bold rounded-b-lg uppercase">{trip.Name}</h1>
+                <h2 className="font-semibold my-2 border-b-2 border-black">Alcunha</h2>
+                <p className="text-xs">{trip.Alcunha}</p>
+                <h2 className="font-semibold border-b-2 border-black">Altura</h2>
+                <p className="text-xs">{trip.Altura}m</p>
+                <h2 className="font-semibold border-b-2 border-black">Peso</h2>
+                <p className="text-xs">{trip.Peso}kg</p>
+                <h2 className="font-semibold border-b-2 border-black">Haki</h2>
+                <p className="text-center text-xs w-32">{trip.Haki}</p>
+                <h2 className="font-semibold border-b-2 border-black">Akuma no mi</h2>
+                <p className="text-xs mb-2">{trip.Devilfruit}</p>
+            </section>
+            <section className={`grid gap-20 grid-cols-2 w-auto h-auto border-4 border-black bg-gray-200 shadow-md ${trip.variantS}`}>
+                <div>
+                    <h1 className="w-52 border-b-2 border-black font-bold uppercase">Bio</h1>
+                    <p className="w-72 min-w-44 break-words">{trip.Fulldescription}</p>
                 </div>
-                <div className="flex w-full mt-5">
-                    <ul>
-                        <li className="text-lg font-bold border-b-2 border-black w-24">Alcunha</li>
-                        <p className="text-sm font-normal">aaaaaaaaaaa</p>
-                        <li className="text-lg font-bold border-b-2 border-black w-20">Altura</li>
-                        <p className="text-sm font-normal">aaaaaaaaaaa</p>
-                        <li className="text-lg font-bold border-b-2 border-black w-14">Peso</li>
-                        <p className="text-sm font-normal">aaaaaaaaaaa</p>
-                        <li className="text-lg font-bold border-b-2 border-black w-14">Haki</li>
-                        <p className="text-sm font-normal">aaaaaaaaaaa</p>
-                        <li className="text-lg font-bold border-b-2 border-black w-32">Akuma no mi</li>
-                        <p className="text-sm font-normal">aaaaaaaaaaa</p>
-                    </ul>
-                    <Image className="-mt-24" src={`/ilustrativeimages/${trip.Name.toLowerCase()}.png`} width={300} height={50} alt="" />
-                </div>
-                <div className="flex mt-10 flex-col">
-                    <h2 className="text-right border-b-2 border-black text-3xl font-semibold">Bio</h2>
-                    <p>Lorem impsum</p>
-                </div>
-            </div>
-        </section>
+                <Image src={`/ilustrativeimages/${trip.Name}.png`} width={300} height={0} alt="" />
+            </section>
+        </main>
     )
 }
