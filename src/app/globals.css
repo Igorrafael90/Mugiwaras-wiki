@@ -17,7 +17,7 @@
 }
 
 body {
-  background-image: radial-gradient(closest-side ,#363636,#000000);
+  background-image: radial-gradient(closest-side ,#555555,#000000);
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import Title from "./components/title";
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
@@ -21,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Code.className} bg-slate-400`}>
-        <Title />
-        {children}</body>
+      <body className={`${Code.className} bg-slate-400`}>{children}</body>
     </html>
   );
 }
