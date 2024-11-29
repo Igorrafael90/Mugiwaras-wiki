@@ -6,8 +6,10 @@ export interface Person {
     Alcunha: string;
     Altura: number;
     Peso: number;
-    Haki: string;
-    Devilfruit: string;
+    Haki: boolean;
+    Haki2: boolean;
+    Haki3: boolean;
+    Devilfruit: boolean;
     variant: string;
     variantS: string;
 }
@@ -23,8 +25,10 @@ export const Personsop: Person[] = [
         Alcunha: "Luffy do Chapéu de Palha",
         Altura: 1.74,
         Peso: 75,
-        Haki: "Haki do Armamento Haki da Visão Haki do rei",
-        Devilfruit: "Hito Hito no Mi Nika"
+        Haki: true,
+        Haki2: true,
+        Haki3: true,
+        Devilfruit: true,
     },
     {
         id: 2,
@@ -36,8 +40,10 @@ export const Personsop: Person[] = [
         Alcunha: "O Caçador de Piratas",
         Altura: 1.81,
         Peso: 90.01,
-        Haki: "Haki do Armamento Haki da Visão Haki do rei",
-        Devilfruit: "Nenhuma"
+        Haki: true,
+        Haki2: true,
+        Haki3: true,
+        Devilfruit: false
     },
     {
         id: 3,
@@ -49,8 +55,10 @@ export const Personsop: Person[] = [
         Alcunha: "Perna Negra",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: "Nenhuma"
+        Haki: true,
+        Haki2: true,
+        Haki3: false,
+        Devilfruit: false
     },
     {
         id: 4,
@@ -62,8 +70,10 @@ export const Personsop: Person[] = [
         Alcunha: "Gata Ladra",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: "Nenhuma"
+        Haki: false,
+        Haki2: false,
+        Haki3: false,
+        Devilfruit: false
     },
     {
         id: 5,
@@ -75,8 +85,10 @@ export const Personsop: Person[] = [
         Alcunha: "God Usopp",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: "Nenhuma"
+        Haki: false,
+        Haki2: true,
+        Haki3: false,
+        Devilfruit: false
     },
     {
         id: 6,
@@ -88,8 +100,10 @@ export const Personsop: Person[] = [
         Alcunha: "O Amante de Algodão-Doce",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: ""
+        Haki: false,
+        Haki2: false,
+        Haki3: false,
+        Devilfruit: true
     },
     {
         id: 7,
@@ -101,8 +115,10 @@ export const Personsop: Person[] = [
         Alcunha: "O Demônio de Ohara",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: ""
+        Haki: true,
+        Haki2: false,
+        Haki3: false,
+        Devilfruit: true
     },
     {
         id: 8,
@@ -114,8 +130,10 @@ export const Personsop: Person[] = [
         Alcunha: "O Ciborgue",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: ""
+        Haki: false,
+        Haki2: false,
+        Haki3: false,
+        Devilfruit: true
     },
     {
         id: 9,
@@ -127,8 +145,10 @@ export const Personsop: Person[] = [
         Alcunha: "Soul King",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: "Nenhuma"
+        Haki: true,
+        Haki2: false,
+        Haki3: false,
+        Devilfruit: true
     },
     {
         id: 10,
@@ -140,7 +160,9 @@ export const Personsop: Person[] = [
         Alcunha: "Cavaleiro do mar",
         Altura: 1,
         Peso: 1,
-        Haki: "",
-        Devilfruit: "Nenhuma"
+        Haki: true,
+        Haki2: true,
+        Haki3: false,
+        Devilfruit: false
     },
 ]

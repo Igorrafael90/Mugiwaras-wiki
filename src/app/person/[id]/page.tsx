@@ -8,6 +8,7 @@ import { notFound } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion"
 import Link from "next/link";
+import { useState } from "react";
 
 interface Pageprops {
     params: {
@@ -25,6 +26,7 @@ export default async function PersonPage({ params }: Pageprops) {
         hidden: { opacity: 0, y: 100 },
         visible: { opacity: 1, y: 0 },
       };
+    const verify = trip.Haki
 
     return (
         <main className="grid grid-cols-1 w-full">
@@ -60,7 +62,14 @@ export default async function PersonPage({ params }: Pageprops) {
                 </div>
                 <h1 className="text-white">Atributos</h1>
                 <div className="pt-1 w-2/3 grid grid-cols-2 space-x-1">
-                    <div className="h-48 bg-slate-100 "></div>
+                    <div className="h-48 bg-slate-100 ">
+                        <ul>
+                            <li>Haki do armamento: {trip.Haki ? "Possui" : "Nao possui"}</li>
+                            <li>Haki da visao: {trip.Haki2 ? "Possui" : "Nao possui"}</li>
+                            <li>Haki do rei: {trip.Haki3 ? "Possui" : "Nao possui"}</li>
+                            <li>Devil fruit: {trip.Devilfruit ? "Possui" : "Nao possui"}</li>
+                        </ul>
+                    </div>
                     <div className="flex justify-center">
                         <img className="h-64" src={`/wantedposters/${trip.Name}.jpg`} alt={`${trip.Name}`} />
                     </div>
