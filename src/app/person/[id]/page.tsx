@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { faHouse } from "@fortawesome/free-solid-svg-icons"
+import { faHouse, faCheck, faX } from "@fortawesome/free-solid-svg-icons"
 import { Personsop, Person } from "@/data";
 import { notFound } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -64,10 +64,10 @@ export default async function PersonPage({ params }: Pageprops) {
                 <div className="pt-1 w-2/3 grid grid-cols-2 space-x-1">
                     <div className="h-48 bg-slate-100 ">
                         <ul>
-                            <li>Haki do armamento: {trip.Haki ? "Possui" : "Nao possui"}</li>
-                            <li>Haki da visao: {trip.Haki2 ? "Possui" : "Nao possui"}</li>
-                            <li>Haki do rei: {trip.Haki3 ? "Possui" : "Nao possui"}</li>
-                            <li>Devil fruit: {trip.Devilfruit ? "Possui" : "Nao possui"}</li>
+                            <li>Haki do armamento: {trip.Haki ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                            <li>Haki da visao: {trip.Haki2 ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                            <li>Haki do rei: {trip.Haki3 ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                            <li>Devil fruit: {trip.Devilfruit ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
                         </ul>
                     </div>
                     <div className="flex justify-center">
