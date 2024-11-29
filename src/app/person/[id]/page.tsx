@@ -50,19 +50,22 @@ export default async function PersonPage({ params }: Pageprops) {
         >
             <section className="flex flex-col justify-center items-center w-full">
                 <h1 className="text-white">Info</h1>
-                <div className="flex justify-center w-2/3 h-28 bg-slate-100">
-                    <ul className="grid grid-cols-2 ">
-                        <li>Nome</li>
-                        <li>Alcunha</li>
-                        <li>Altura</li>
-                        <li>Peso</li>
-                        <li>Idade</li>
-                        <li>Recompensa</li>
-                    </ul>
+                <div className="flex justify-center w-2/3 h-28 bg-white rounded-md">
+                    <div className="w-full flex justify-around">
+                        <ul className="pt-2">
+                            <li className="pt-1">Nome: {trip.Name}</li>
+                            <li className="pt-1">Peso: {trip.Peso}kg</li>
+                            <li className="pt-1">Alcunha: {trip.Alcunha}</li>
+                        </ul>
+                        <ul className="pt-2">
+                            <li className="pt-1">Idade:</li>
+                            <li className="pt-1">Altura: {trip.Altura}m</li>
+                        </ul>
+                    </div>
                 </div>
-                <h1 className="text-white">Atributos</h1>
+                <h1 className="text-white pt-6 pb-2">Atributos</h1>
                 <div className="pt-1 w-2/3 grid grid-cols-2 space-x-1">
-                    <div className="h-48 bg-slate-100 ">
+                    <div className="h-64 bg-white rounded-md">
                         <ul>
                             <li>Haki do armamento: {trip.Haki ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
                             <li>Haki da visao: {trip.Haki2 ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
@@ -74,8 +77,8 @@ export default async function PersonPage({ params }: Pageprops) {
                         <img className="h-64" src={`/wantedposters/${trip.Name}.jpg`} alt={`${trip.Name}`} />
                     </div>
                 </div>
-                <h1 className="text-white">Historia</h1>
-                <div className="w-2/3 h-48 bg-slate-100">
+                <h1 className="text-white pt-6 pb-2">Historia</h1>
+                <div className="w-2/3 h-48 bg-white rounded-md">
                     <p></p>
                 </div>
             </section>
