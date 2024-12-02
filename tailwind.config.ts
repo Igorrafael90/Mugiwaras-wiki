@@ -36,6 +36,16 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "poster": "#e2d7c5",
+      },
+      screens: {
+        'max-sm': { max: '850px' },
+        'max-smd': { max: '985px' },
+      },
+      fontSize:{
+        'XD': ['0.60rem', '0.80rem'],
+      }
     },
   },
   plugins: [],

@@ -40,7 +40,7 @@ export default async function PersonPage({ params }: Pageprops) {
                 </div>
             </header>
             <motion.div
-          key={trip.Name}
+          key={trip.Nome}
           className="block"
           initial="hidden"
           whileInView="visible"
@@ -48,37 +48,38 @@ export default async function PersonPage({ params }: Pageprops) {
           transition={{ duration: 1}}
           variants={cardVariants}
         >
-            <section className="flex flex-col justify-center items-center w-full">
+            <section className="flex flex-col justify-center items-center mx-auto w-3/4">
                 <h1 className="text-white">Info</h1>
-                <div className="flex justify-center w-2/3 h-28 bg-white rounded-md">
-                    <div className="w-full flex justify-around">
+                <div className="flex justify-center w-2/3 min-w-96 h-28 bg-white opacity-85 shadow-lg shadow-black rounded-md hover:scale-105 duration-200">
+                    <div className="w-full flex justify-between">
                         <ul className="pt-2">
-                            <li className="pt-1">Nome: {trip.Name}</li>
-                            <li className="pt-1">Peso: {trip.Peso}kg</li>
-                            <li className="pt-1">Alcunha: {trip.Alcunha}</li>
+                            <li className="pt-1">Nome:{trip.Nome}</li>
+                            <li className="pt-1">Peso:{trip.Peso}kg</li>
+                            <li className="pt-1">Alcunha:{trip.Alcunha}</li>
                         </ul>
                         <ul className="pt-2">
                             <li className="pt-1">Idade:</li>
-                            <li className="pt-1">Altura: {trip.Altura}m</li>
+                            <li className="pt-1">Altura:{trip.Altura}m</li>
                         </ul>
                     </div>
                 </div>
                 <h1 className="text-white pt-6 pb-2">Atributos</h1>
-                <div className="pt-1 w-2/3 grid grid-cols-2 space-x-1">
-                    <div className="h-64 bg-white rounded-md">
-                        <ul>
-                            <li>Haki do armamento: {trip.Haki ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
-                            <li>Haki da visao: {trip.Haki2 ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
-                            <li>Haki do rei: {trip.Haki3 ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
-                            <li>Devil fruit: {trip.Devilfruit ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                <div className="pt-1 w-2/3 flex justify-center space-x-1 max-sm:flex-col">
+                    <div className="h-64 min-w-56 bg-white hover:scale-105 duration-200 shadow-lg shadow-black opacity-85 rounded-md max-sm:max-w-56 max-sm:mb-4 max-sm:mx-auto">
+                        <ul >
+                            <li className="mb-2">Haki do armamento: {trip.Haki ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                            <li className="mb-2">Haki da visao: {trip.Haki2 ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                            <li className="mb-2">Haki do rei: {trip.Haki3 ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                            <li className="mb-2">Devil fruit: {trip.Devilfruit ? <FontAwesomeIcon icon={faCheck}/> : <FontAwesomeIcon icon={faX}/>}</li>
+                            <li className="mb-2">Cargo: {trip.Cargo}</li>
                         </ul>
                     </div>
                     <div className="flex justify-center">
-                        <img className="h-64" src={`/wantedposters/${trip.Name}.jpg`} alt={`${trip.Name}`} />
+                        <img className="h-64 shadow-lg shadow-black hover:scale-105 duration-200" src={`/wantedposters/${trip.Nome}.jpg`} alt={`${trip.Nome}`} />
                     </div>
                 </div>
-                <h1 className="text-white pt-6 pb-2">Historia</h1>
-                <div className="w-2/3 h-48 bg-white rounded-md">
+                <h1 className="text-white pt-6 pb-2 ">Historia</h1>
+                <div className="w-2/3 h-48 bg-white hover:scale-105 duration-200 opacity-85 shadow-lg shadow-black rounded-md">
                     <p></p>
                 </div>
             </section>
