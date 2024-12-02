@@ -43,7 +43,7 @@ export default function Home() {
           transition={{ duration: 0.5}}
           variants={cardVariants}
         >
-          <Link href={`/person/${trip.id}`} key={trip.Nome} className="block">
+          <Link href={`/person/${trip.Nome}`} key={trip.Nome} className="block">
             <div className={`bg-neutral-900 h-80 rounded-md p-8 text-gray-300 border-gray-900 border shadow-black shadow-lg ${trip.variant} transition ease-out hover:scale-105 hover:-translate-y-3 duration-200`}>
               <header className="flex items-center justify-between">
                 <h1>{trip.Nome}</h1>
