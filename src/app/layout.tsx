@@ -20,9 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="shortcut icon" href="icons/luffy.png" type="image/x-icon" />
-      </head>
       <body className={`${Code.className} bg-slate-400`}>{children}</body>
     </html>
   );
